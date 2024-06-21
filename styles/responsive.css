@@ -1,0 +1,67 @@
+@media screen and (max-width: 769px) {
+    nav{
+        height: 50vh;
+        flex-direction: column;
+        position: static;
+    }
+    .nav-container{
+        flex-direction: column;
+        width: 85%;
+        margin-top: 2rem;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        gap: 1.125rem;
+        margin-top: 2rem;
+    }
+    .nav-logo .logo-text{
+        font-size: 2rem;
+    }
+
+    /* banner responsive start  */
+    .banner-container{
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        height: 800px;
+    }
+    .banner-section{
+        background-position: bottom;
+        background-image: none;
+    }
+    .banner-content{
+        order: 2;
+        padding-left: 15%;
+    }
+    .banner-motto-1{
+        font-size: 2rem;
+    }
+    .banner-motto-2{
+        font-size: 3rem;
+    }
+
+    .banner-btn-2{
+        margin-left: 1rem;
+    }
+    .banner-img{
+        text-align: center!important;
+        grid-column: 1;
+    }
+
+    /* banner responsive end  */
+
+    /* we are gamer section responsive  */
+    .we-are-gamer-section{
+        background: none;
+        height: 100vh;
+    }
+    .we-are-gamer-container{
+        flex-direction: column;
+    }
+    .we-are-gamer-img, .we-are-gamer-content{
+        width: 100%;
+        text-align: center;
+    }
+    /* we are gamer section responsive  */
+
+}

@@ -52,7 +52,7 @@ nav{
 }
 
 .nav-container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ nav{
     background-position: left;
 }
 .banner-container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -159,8 +159,13 @@ nav{
 }
 .banner-info .fa-play{
     border: 1px solid var(--dark-gray);
-    padding: 5px 6px;
+    /* padding: 4px 5px; */
     border-radius: 50px;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: .7rem;
 }
 .banner-info i{
@@ -210,7 +215,7 @@ nav{
     height: 50vh;
 }
 .we-are-gamer-container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -247,3 +252,190 @@ nav{
     font-weight: 600;
 }
 /* we are gamer styles ends */
+
+
+ /* Online games style start  */
+.online-games-container{
+    width: 70%;
+    margin: 0 auto;
+}
+.online-games-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 1rem;
+    color: var(--primary-black);
+}
+.online-games-desc{
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.online-games-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+}
+.online-games-card-container .card-img{
+    position: relative;
+    border-radius: 15px;
+}
+.online-games-card-container .card-img img{
+    width: 100%;
+}
+.online-games-card-container .card-img .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.online-games-card-container .card-img:hover .img-overlay{
+    opacity: 1;
+}
+
+.card-img .img-overlay .fa-solid{
+    font-size: 2rem;
+    color: var(--primary-white);
+}
+
+.card-img .img-overlay .hover-effect-text{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.card-content .card-text{
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+    margin-top: 1.25rem;
+}
+ /* Online games style ends */
+
+
+ /* play instantly styles  */
+.play-instantly-container, .play-games-container{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 100px;
+}
+.play-instantly-content{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+.play-instantly-img, .play-games-img{
+    position: relative;
+    padding-right: 1%;
+    text-align: right;
+}
+.play-instantly-img .img-1 img, .play-games-img .img-1 img{
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+}
+.play-instantly-img .img-2{
+    position: absolute;
+    bottom: -80px;
+    max-width: 250px;
+    max-height: 300px;
+}
+.play-instantly-img .img-2 img, .play-games-img .img-2 img{
+    width: 100%;
+    cursor: pointer;
+}
+.play-instantly-title{
+    font-size: 2.5rem;
+    color: var(--primary-black);
+    margin-bottom: 1.25rem;
+}
+.play-instantly-desc{
+    color: var(--dark-gray);
+    font-size: 1.125rem;
+}
+/* play games styeles  */
+.play-games-container{
+    height: 80vh;
+}
+.play-games-container{
+    margin-top: 80px;
+}
+.play-games-img .img-2{
+    position: absolute;
+    bottom: -80px;
+    right: -110px;
+    max-width: 250px;
+    max-height: 300px;
+}
+/* play instantly styles ends  */
+
+
+/* careers section styles start  */
+.careers-section{
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.careers-container{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-white);
+}
+.careers-content{
+    padding-right: 1%;
+}
+.careers-text h4{
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+.careers-text p{
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+
+.open-position li a, .location li a{
+    color: var(--primary-white);
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin-bottom: .6rem;
+    display: block;
+    font-weight: 500;
+}
+.careers-location{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.location{
+    text-align: right;
+}
+
+
+
+
+.careers-img img{
+    width: 100%;
+}
+/* careers section styles ends */

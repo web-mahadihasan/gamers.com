@@ -23,7 +23,7 @@
         width: 85%;
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
-        height: 800px;
+        height: 900px;
     }
     .banner-section{
         background-position: bottom;
@@ -64,4 +64,55 @@
     }
     /* we are gamer section responsive  */
 
+    /* Online games responsive  */
+
+    .online-games-container{
+        width: 85%;
+    }
+    .online-games-title{
+        font-size: 2rem;
+    }
+    .online-games-card-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        row-gap: 3rem;
+    }
+
+    /* play instantly & play games responsive  */
+    .play-instantly-container, .play-games-container{
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4rem;
+    }
+    .play-instantly-img .img-1 img{
+        width: 90%;
+    }
+    .play-instantly-img .img-2{
+        width: 180px;
+        height: 220px;
+        left: -40px;
+    }
+    .play-instantly-img .img-2 img{
+        width: 90%;
+    }
+
+    .play-games-container{
+        height: auto;
+    }
+    .play-games-img{
+        order: 2;
+    }
+    .play-games-img .img-1{
+        text-align: left;
+        height: 340px;
+    }
+    .play-games-img .img-2{
+        width: 180px;
+        height: 220px;
+        right: -30px;
+    }
+
+    /* careers section responsive  */
+    .careers-container{
+        
+    }
 }

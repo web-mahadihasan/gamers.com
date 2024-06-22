@@ -108,11 +108,32 @@
     .play-games-img .img-2{
         width: 180px;
         height: 220px;
-        right: -30px;
+        right: -10px;
     }
 
     /* careers section responsive  */
+    .careers-section{
+        margin-top: 100px;
+    }
     .careers-container{
-        
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .careers-text h4{
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    .careers-content{
+        padding: 0;
+    }
+    .careers-text p{
+        font-size: 1rem;
+    }
+    .open-position li a, .location li a{
+        font-size: 1rem;
+        gap: 1rem;
+    }
+    .careers-img{
+        margin-top: 3rem;
     }
 }

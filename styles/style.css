@@ -414,7 +414,6 @@ nav{
     margin-bottom: 2rem;
 }
 
-
 .open-position li a, .location li a{
     color: var(--primary-white);
     text-decoration: none;
@@ -422,6 +421,11 @@ nav{
     margin-bottom: .6rem;
     display: block;
     font-weight: 500;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.open-position li a:hover, .location li a:hover{
+    transform: translateX(10px);
 }
 .careers-location{
     width: 100%;
@@ -431,11 +435,53 @@ nav{
 .location{
     text-align: right;
 }
-
-
-
-
 .careers-img img{
     width: 100%;
+    cursor: pointer;
 }
 /* careers section styles ends */
+
+
+/* games option section styles start */
+.games-container{
+    width: 65%;
+    margin: 0 auto;
+    height: 40vh;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-content: center;
+    row-gap: 1.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 2rem;
+}
+
+.games-card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    border: 2px solid transparent;
+    padding: 8px 15px;
+    border-radius: 40px;
+    transition: all .4s ease;
+}
+.games-card:hover{
+    border: 2px solid var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 40px;
+}
+.games-card:hover .games-card-title{
+    color: var(--primary-color);
+}
+.games-card-img{
+    width: 40px;
+}
+.games-card-title{
+    font-weight: 600;
+    color: var(--primary-black);
+}
+
+/* games option section styles ends */

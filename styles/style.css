@@ -460,13 +460,13 @@ nav{
     gap: 1rem;
     margin-right: 1rem;
     border: 2px solid transparent;
-    padding: 8px 15px;
+    padding: 8px 10px;
     border-radius: 40px;
     transition: all .6s ease;
 }
 .games-card:hover{
     border: 2px solid var(--primary-color);
-    padding: 8px 15px;
+    padding: 8px 10px;
     border-radius: 40px;
     color: var(--primary-color)!important;
 }
@@ -515,7 +515,7 @@ footer{
 .footer-logo span{
     color: var(--primary-color);
 }
-.footer-menu ul, .footer-social-icons ul{
+.footer-common ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 1rem;

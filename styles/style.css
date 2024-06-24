@@ -447,15 +447,11 @@ nav{
     width: 65%;
     margin: 0 auto;
     height: 40vh;
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-content: center;
-    justify-content: center;
-    row-gap: 1.5rem; */
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     row-gap: 2rem;
+    justify-content: center;
 }
 
 .games-card{
@@ -466,12 +462,13 @@ nav{
     border: 2px solid transparent;
     padding: 8px 15px;
     border-radius: 40px;
-    transition: all .4s ease;
+    transition: all .6s ease;
 }
 .games-card:hover{
     border: 2px solid var(--primary-color);
     padding: 8px 15px;
     border-radius: 40px;
+    color: var(--primary-color)!important;
 }
 .games-card:hover .games-card-title{
     color: var(--primary-color);
@@ -485,3 +482,69 @@ nav{
 }
 
 /* games option section styles ends */
+
+
+/* footer section styles  */
+
+footer{
+    width: 100%;
+    background-color: #0b0223;
+    /* height: 40vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    margin: 0 auto;
+    color: var(--primary-white);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.footer-logo{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+.footer-logo .logo-text{
+    color: var(--primary-white);
+    font-size: 2.8rem;
+}
+.footer-logo span{
+    color: var(--primary-color);
+}
+.footer-menu ul, .footer-social-icons ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-top: 40px;
+}
+.footer-common ul li a{
+    color: var(--primary-white);
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.footer-social-icons ul li i{
+    font-size: 2.5rem;
+    transition: all .5s ease;
+}
+.footer-social-icons ul li a:hover i{
+    transform: translateY(-15px);
+}
+.footer-social-icons{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer-links ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* footer section styles ends */

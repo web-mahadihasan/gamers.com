@@ -136,4 +136,16 @@
     .careers-img{
         margin-top: 3rem;
     }
+
+    /* games option responsive  */
+    .games-container{
+        width: 80%;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .games-card{
+        margin-right: .5rem;
+        gap: .5rem;
+    }
 }

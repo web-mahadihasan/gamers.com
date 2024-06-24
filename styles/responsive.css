@@ -1,3 +1,39 @@
+@media screen and (max-width: 992px) {
+    nav{
+        height: 15vh;
+    }
+    .nav-container{
+       width: 95%;
+    }
+    .banner-container{
+        width: 95%;
+        height: 90vh;
+    }
+    .we-are-gamer-container{
+        width: 95%;
+    }
+    .online-games-container{
+        width: 95%;
+    }
+    .play-instantly-container, .play-games-container{
+        width: 95%;
+    }
+    .careers-section{
+        height: 100vh;
+        margin-top: 100px;
+    }
+    .careers-container{
+        width: 95%;
+    }
+    .careers-text h4{
+        margin-top: 2rem;
+    }
+    .games-container{
+        width: 95%;
+        margin-top: 30px;
+    }
+}
+
 @media screen and (max-width: 769px) {
     nav{
         height: 50vh;
@@ -108,7 +144,7 @@
     .play-games-img .img-2{
         width: 180px;
         height: 220px;
-        right: -10px;
+        right: -0px;
     }
 
     /* careers section responsive  */
@@ -140,10 +176,12 @@
     /* games option responsive  */
     .games-container{
         width: 90%;
+        margin-top: 20px;
         height: 90vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         row-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        align-content: center;
     }
     .games-card{
         margin-right: .5rem;
@@ -155,9 +193,6 @@
     .games-card-img{
         width: 30px;
     }
-
-
-
 
     /* footer section responsive */
     .footer-container{
@@ -172,3 +207,4 @@
         margin-bottom: 4rem;
     }
 }
+
